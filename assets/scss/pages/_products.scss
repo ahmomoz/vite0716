@@ -30,13 +30,9 @@
   .column:nth-child(n+4) {
     margin-top: 80px;
   }
-}
-@media (max-width: 768px) {
-  .sunglasses-glasses-group {
-    .product-card-img {
-      img {
-        aspect-ratio: 3/2;
-      }
+  .product-card-img img {
+    @include pad {
+      aspect-ratio: 3/2;
     }
   }
 }
@@ -44,19 +40,14 @@
 .optical-glasses-group,
 .sunglasses-glasses-group {
   flex-wrap: wrap;
-}
-@media (max-width: 1200px) {
-  .optical-glasses-group,
-  .sunglasses-glasses-group {
-    .column:nth-child(n+3) {
+
+  .column:nth-child(n+3) {
+    @include lg-pc {
       margin-top: 40px;
     }
   }
-}
-@media (max-width: 576px) {
-  .optical-glasses-group,
-  .sunglasses-glasses-group {
-    .column:nth-child(n+2) {
+  .column:nth-child(n+2) {
+    @include mobile {
       margin-top: 24px;
     }
   }

@@ -7,11 +7,10 @@
   select {
     width: 304px;
     height: 38px;
-  }
-}
-@media (max-width: 576px) {
-  select {
-    width: 100%;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 }
 /* stores-card-group */
@@ -21,6 +20,19 @@
   .column:nth-child(n+4) {
     margin-top: 48px;
   }
+
+  .column:nth-child(n+3) {
+    @include pad {
+      margin-top: 24px;
+    }
+  }
+  
+  .column:nth-child(n+2) {
+    @include mobile {
+      margin-top: 24px;
+    }
+  }
+
 }
 .stores-card {
   height: 100%;
@@ -45,20 +57,5 @@
 
   &:hover {
     background: $gray-color;
-  }
-}
-
-@media (max-width: 768px) {
-  .stores-card-group {
-    .column:nth-child(n+3) {
-      margin-top: 24px;
-    }
-  }
-}
-@media (max-width: 576px) {
-  .stores-card-group {
-    .column:nth-child(n+2) {
-      margin-top: 24px;
-    }
   }
 }

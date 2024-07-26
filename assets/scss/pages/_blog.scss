@@ -1,5 +1,5 @@
 /* blogs-nav-wrap */
-.blogs-icon-group > a{
+.blogs-icon-group > a {
   img {
     width: 30px;
   }
@@ -23,7 +23,7 @@
 .blogs-media-link, .blogs-text-md {
   display: none;
 }
-@media (max-width: 1200px) {
+@include lg-pc {
   .blogs-img {
     img {
       object-fit: cover;
@@ -38,7 +38,7 @@
     display: inline;
   }
 }
-@media (max-width: 576px) {
+@include mobile {
   .blogs-card {
     flex-direction: column;
     gap: 8px
