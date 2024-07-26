@@ -1,5 +1,11 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
-
-
-@import './pages/index.scss';
+@import './pages/_reset.scss';
+@import './pages/_base.scss';
+@import './pages/_component.scss';
+@import './layout/_layout.scss';
+@import './pages/_index.scss';
+@import './pages/_products.scss';
+@import './pages/_stores.scss';
+@import './pages/_storeContent.scss';
+@import './pages/_qa.scss';
+@import './pages/_blog.scss';
+@import './pages/_blogContent.scss';

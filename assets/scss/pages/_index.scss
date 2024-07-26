@@ -1,3 +1,103 @@
-.index-title {
-  font-size: 100px;
+/* header */
+.home-header-wrap {
+  background-image: url('../assets/images/home-header.png');
+}
+
+@media (max-width: 1200px) {
+  .home-header-wrap {
+    background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png');
+    background-position: top;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-header-wrap {
+    padding: 144px 0;
+  }
+}
+/* home-features-wrap */
+.home-features-group {
+  img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .home-features-group  {
+    flex-wrap: wrap;
+  }
+}
+/* class-glasses-wrap */
+@media (max-width: 1200px) {
+  .class-glasses-group  {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* co-glasses-wrap  */
+.co-glasses-wrap {
+  background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png');
+}
+.co-glasses-group {
+  .column {
+    padding: 0;
+  }
+}
+.co-glasses-img {
+  height: 240px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .co-glasses-wrap {
+    background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-sm.png');
+    background-position: top;
+
+    .column {
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+  }
+  .co-glasses-group {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+/* recommend-wrap*/
+.recommend-card {
+  box-shadow: 0px 2px 6px #00000029;
+  border: 1px solid #DEE2E6;
+  border-radius: 4px;
+}
+.recommend-content {
+  height: 205px;
+}
+
+@media (max-width: 768px) {
+  .recommend-group {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+/* contact-wrap */
+.contact-group {
+  input {
+    padding: 6px 12px;
+    background-color: transparent;
+
+    &::placeholder {
+      opacity: 0.8;
+    }
+  }
+}
+.contact-form-btn a {
+  padding: 16px 176px;
+}
+
+@media (max-width: 576px) {
+  .contact-form-btn a {
+    display: block;
+    padding: 16px 0;
+  }
 }

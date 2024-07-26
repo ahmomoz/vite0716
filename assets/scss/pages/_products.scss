@@ -1,0 +1,63 @@
+/* nav */
+.products-nav-wrap {
+  .column {
+    padding: 0;
+  }
+}
+.products-nav-group {
+  li {
+    border: 1px solid #DCDCDC;
+
+    a {
+      display: block;
+    }
+  }
+}
+/* products-banner-wrap */
+.products-banner-group {
+  .column {
+    padding: 0;
+  }
+}
+/* optical-glasses-group */
+.optical-glasses-group {
+  .column:nth-child(n+5) {
+    margin-top: 80px;
+  }
+}
+/* sunglasses-glasses-wrap */
+.sunglasses-glasses-group {
+  .column:nth-child(n+4) {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .sunglasses-glasses-group {
+    .product-card-img {
+      img {
+        aspect-ratio: 3/2;
+      }
+    }
+  }
+}
+/* common */
+.optical-glasses-group,
+.sunglasses-glasses-group {
+  flex-wrap: wrap;
+}
+@media (max-width: 1200px) {
+  .optical-glasses-group,
+  .sunglasses-glasses-group {
+    .column:nth-child(n+3) {
+      margin-top: 40px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .optical-glasses-group,
+  .sunglasses-glasses-group {
+    .column:nth-child(n+2) {
+      margin-top: 24px;
+    }
+  }
+}
